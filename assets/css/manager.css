@@ -1,0 +1,310 @@
+body{
+    background: #1c676a!important;
+    font-family: "IBM Plex Sans";
+}
+
+h1{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.container-fluid{
+    background: #fff;
+    max-width: 2000px;
+    /* margin: 30px auto; */
+    /* overflow-x: auto; */
+    word-wrap: normal;
+    /* padding:  20px 30px; */
+    /* border-radius: 10px 120px 10px 10px; */
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    /* display: inline-block; */
+}
+
+/*This is for the button values*/
+button span:nth-child(1){
+    margin-top: 6px;
+    color: white;
+    margin-right: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+button span:nth-child(2){
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+button span:nth-child(3){
+    margin-top: 6px;
+    color: white;
+    margin-right: 2px;
+    margin-left: 3px;
+}
+
+button span:nth-child(4){
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+button span:nth-child(5){
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+/*This is for the content values*/
+
+.content span:nth-child(1) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 38px;
+}
+
+
+.content span:nth-child(2) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.content span:nth-child(3) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.content span:nth-child(4) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.content span:nth-child(5) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+.content span:nth-child(6) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.content span:nth-child(7) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.content span:nth-child(8) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.content span:nth-child(9) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.content span:nth-child(10) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.content span:nth-child(11) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+.content span:nth-child(12) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+.content span:nth-child(13) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+.content span:nth-child(14) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+.content span:nth-child(15) {
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+.content span:nth-child(16){
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+.content span:nth-child(17){
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+.content span:nth-child(18){
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+.content span:nth-child(19){
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+.content span:nth-child(20){
+    font-size: 12px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+
+.collapsible {
+  background-color: #1c676a!important;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  /* background-color: #52c4ca!important; */
+  border: 5px 5px 5px 5px;
+  border-color: white;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  width: 100%;
+  /* padding: 0 18px; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #52c4ca!important;
+  color: white;
+}
+
+.modal-content {
+  color: #1c676a!important;
+}
+
+#removeClinicMain {
+  background: none;
+  color: white;
+  border-style: none;
+  outline: none;
+}
+
+#removeClinicSidebar {
+  background: none;
+  color: white;
+  border-style: none;
+  outline: none;
+}
+
+#removeClinicMain:hover {
+  cursor: pointer;
+}
+
+#removeClinicSidebar:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  #clinic-button{
+      margin-top: 50px;
+  }
+
+  #mobileTrigger {
+    background: #1c676a!important;
+  }
+}

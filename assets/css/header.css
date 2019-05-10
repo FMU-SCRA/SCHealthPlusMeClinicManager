@@ -1,0 +1,65 @@
+#header {
+  text-align: right;
+  height: 50px!important;
+  background: #1c676a!important;
+  opacity: 0.9;
+  width: auto;
+}
+
+/* #matt2LogoHome {
+  margin-right: 10px;
+} */
+
+#topLabels {
+  text-align: right;
+  width: auto;
+  -webkit-user-select: none;
+  /* margin-bottom: 5px; */
+}
+
+#topLabels a {
+  text-decoration: none;
+  color: white;
+}
+
+#topLabels a:hover {
+  color: #cccccc;
+}
+
+#aboutTop {
+  margin-right: 30px;
+}
+
+#educationTop {
+  margin-right: 30px;
+}
+
+#featuresTop {
+  margin-right: 30px;
+}
+
+#photographyTop {
+  margin-right: 30px;
+}
+
+#contactTop {
+  margin-right: 30px;
+}
+
+#mobileTrigger {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  #header {
+    display: none;
+  }
+
+  #topLabels {
+    display:none;
+  }
+
+  #mobileTrigger {
+    display: block;
+  }
+}

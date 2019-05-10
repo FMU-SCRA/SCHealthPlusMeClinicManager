@@ -1,0 +1,83 @@
+@media screen and (max-width: 1000px){
+  #submit {
+      text-align: center;
+      /* margin-left: inherit; */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+  }
+
+body {
+  color: white!important;
+}
+
+}
+
+body {
+  color: white!important;
+}
+
+#submit {
+    text-align: center;
+    /* margin-left: inherit; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+  color: #52c4ca!important;
+}
+
+#removeClinicMain {
+  background: none;
+  color: white;
+  border-style: none;
+  outline: none;
+}
+
+#removeClinicSidebar {
+  background: none;
+  color: white;
+  border-style: none;
+  outline: none;
+}
+
+#removeClinicMain:hover {
+  cursor: pointer;
+}
+
+#removeClinicSidebar:hover {
+  cursor: pointer;
+}
+
+#wrapper {
+  width: 400px;
+  text-align: center;
+  /* margin-left: inherit; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bp {
+  width: 25px;
+  margin-right: 0px;
+  border-right: 0px;
+}
+#bs {
+    width: 25px;
+}
+#chol {
+  width: 25px;
+}
+#flu {
+    width: 25px;
+}
+#pneu{
+  width: 25px;
+}
+#shing {
+    width: 25px;
+}
