@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Site Home of Matt Harrington. Photographer. Web Design. Android Development. Photographer. Bass Player.">
+      <meta name="author" content="Matt Harrington">
+
+      <title>Clinic Manager</title>
+      <link rel="icon" href="assets/images/appicon.png" type="image/">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+      <link rel="stylesheet" type="text/css" href="assets/css/manager.css"/>
+      <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
+      <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+      <!-- link for bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <!-- Link for font -->
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400" rel="stylesheet">
+
+    </head>
+
+  <body>
+    <div id="sidebar-wrapper">
+
+      <span id="toggleSidebar" class="menu-toggle">
+        <i class="fas fa-bars fa-2x"></i>
+        <span id="normalHamburgerSidebar"></span>
+      </span>
+
+      <div class="links-sidebar">
+        <a href="masterlist.html" id="matt2LogoHomeSiderbar"><img src="assets/images/appicon.png" alt="mattLogo" height="30" width="30"/></a>
+
+        <ul id="listOfLinks">
+          <li>
+          <button id="removeClinicSidebar">Remove Clinic</button>
+          </li>
+          <li>
+            <a href="clinics.html" id="contactTop">Add Clinic</a>
+          </li>
+        </ul>
+      </div>
+
+    </div> <!-- End of sidebar-wrapper -->
+
+    <div class="navbar fixed-top" id="mobileTrigger">
+      <span id="toggle" class="menu-toggle">
+        <i class="fas fa-bars fa-2x"></i>
+        <span id="normalHamburger"></span>
+      </span>
+    </div>
+
+    <div class="navbar fixed-top" id="header">
+        <a href="clinics.html" id="matt2LogoHome"><img src="assets/images/appicon.png" alt="mattLogo" height="30" width="30"/></a>
+      <div id="topLabels">
+        <!-- <button id="removeClinicSidebar">Remove Clinic</button> -->
+        <a href="clinics.html" id="contactTop">Add Clinic</a>
+
+        <button id="removeClinicMain">Remove Clinic</button>
+
+      </div>
+    </div>
+    <!-- End of the header -->
+
+<div class="container-fluid" id="wrapper">
+
+  <div class="row">
+    <div class="col">
+      <ul id="clinic-button">
+        <!-- <ul id="clinic-list">
+
+        </ul> -->
+      </ul>
+  </div>
+</div> <!-- End of Container-Fluid -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.slidereveal.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/addClinics.js"></script> -->
+    <script src="assets/js/masterClinicManager.js"></script>
+
+    </body>
+  </html>

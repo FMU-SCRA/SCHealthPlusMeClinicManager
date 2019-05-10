@@ -1,0 +1,111 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body {
+  color: #1c676a;
+  background-color: #52c4ca!important;
+  font-family: "IBM Plex Sans";
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+hr {
+  color: white;
+}
+
+body > div.container-fluid {
+  margin-top: 50px;
+  width:100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+#toggle {
+  color: white;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  text-align: left;
+  display: block;
+  padding: 0;
+}
+
+#toggle:hover {
+  cursor: pointer;
+}
+
+#googlePlayBadge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height:50px;
+  width: 175px;
+}
+
+#appIcon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+#downloadText {
+  color: white;
+  text-align: center;
+}
+
+#title {
+  color: white;
+  /* position: static;
+  text-align: right; */
+  margin-right: 15px;
+  margin-top: 0px;
+  z-index: 2;
+  position: fixed;
+  right: 30px;
+}
+
+#wrapper {
+  width: auto;
+  margin-top: 70px;
+
+}
+
+#wrapperClinic {
+  width: auto;
+  margin-top: 70px;
+  margin-left: 150px;
+  margin-right:150px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  #wrapper {
+    width: auto;
+    margin-top: 0px;
+  }
+
+  #wrapperClinic {
+    margin-left: 55px;
+    margin-right:55px;
+    width:auto;
+    text-align: center;
+  }
+  #title {
+    color: white;
+    position: fixed;
+    right: 10px;
+    margin-top: 11px;
+    z-index: 2;
+    font-size: 25px;
+  }
+}

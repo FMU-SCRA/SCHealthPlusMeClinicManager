@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Adding A Clinic">
+      <meta name="author" content="Matt Harrington">
+
+      <title>Adding a Clinic</title>
+      <link rel="icon" href="assets/images/appicon.png" type="image/">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+      <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
+      <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+      <!-- link for bootstrap -->
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <!-- Link for font -->
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400" rel="stylesheet">
+
+    </head>
+
+  <body>
+    <div id="sidebar-wrapper">
+
+      <span id="toggleSidebar" class="menu-toggle">
+        <i class="fas fa-bars fa-2x"></i>
+        <span id="normalHamburgerSidebar"></span>
+      </span>
+
+      <div class="links-sidebar">
+        <a href="clinics.html" id="matt2LogoHomeSiderbar"><img src="assets/images/appicon.png" alt="mattLogo" height="30" width="30"/></a>
+
+        <ul id="listOfLinks">
+          <li>
+            <button id="removeClinicSidebar">Remove Clinic</button>
+          </li>
+          <li>
+            <a href="masterlist.html" id="master-list">Clinic Manager</a>
+          </li>
+        </ul>
+      </div>
+
+    </div> <!-- End of sidebar-wrapper -->
+
+    <div class="navbar fixed-top" id="mobileTrigger">
+      <span id="toggle" class="menu-toggle">
+        <i class="fas fa-bars fa-2x"></i>
+        <span id="normalHamburger"></span>
+      </span>
+    </div>
+
+    <div class="navbar fixed-top" id="header">
+        <a href="clinics.html" id="matt2LogoHome"><img src="assets/images/appicon.png" alt="mattLogo" height="30" width="30"/></a>
+      <div id="topLabels">
+        <!-- <a href="contact.html" id="contactTop">Remove Clinic</a> -->
+        <a href="masterlist.html" id="master-list">Clinic Manager</a>
+        <button id="removeClinicMain">Remove Clinic</button>
+      </div>
+    </div>
+    <!-- End of the header -->
+
+<div class="container-fluid" id="wrapperClinic">
+  <div class="form-area">
+        <form role="form" id= "clinicForm" autocomplete="off">
+        <!-- <br style="clear:both"> -->
+                    <h3 style="margin-bottom: 25px; text-align: center;">Clinic Form</h3>
+    				<div class="form-group">
+						<input type="text" class="form-control" id="clinicName" name="clinicName" placeholder="Clinic Name" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
+					</div>
+          <div class="form-group">
+						<input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+					</div>
+          <div class="form-group">
+						<input type="text" class="form-control" id="state" name="state" placeholder="State" required>
+					</div>
+          <div class="form-group">
+						<input type="text" class="form-control" id="zip" name="zip" placeholder="ZIP Code" required>
+					</div>
+          <div class="form-group">
+						<input type="text" class="form-control" id="phone" name="phone" placeholder="Phone (Format: 12345678910)" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="hoursNormal" name="hours" placeholder="Normal Hours (Format: 09:00am-05:30pm)" required>
+					</div>
+          <div class="form-group">
+						<input type="text" class="form-control" id="hoursSat" name="hours" placeholder="Saturday Hours (Input None If Not Applicable)" required>
+					</div>
+          <div class="form-group">
+						<input type="text" class="form-control" id="hoursSun" name="hours" placeholder="Sunday Hours (Input None If Not Applicable)" required>
+					</div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="url" name="url" placeholder="Website (Format: www.mywebsite.com)" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="lat" name="lat" placeholder="Latitude (Format: 00.00000)" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="longitude" name="longitude" placeholder="Longitude (Format: -00.00000)" required>
+          </div>
+
+                    <div class="form-group">
+                    <textarea class="form-control" type="textarea" id="services" placeholder="Services (Format: Seperate By Commas)" maxlength="140" rows="2"></textarea>
+                        <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
+                    </div>
+
+        <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+        </form>
+
+    <!-- <div class="form-group">
+      <input id="cIDinput" type="text" class="form-control" name="clientIDBox" placeholder="ID" value="">
+    </div> -->
+
+
+        <br>
+    </div>
+</div> <!-- End of Container-Fluid -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.slidereveal.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/addClinics.js"></script>
+    </body>
+  </html>
