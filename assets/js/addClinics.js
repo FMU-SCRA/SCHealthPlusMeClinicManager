@@ -135,11 +135,12 @@ db.collection("Locations").add({
     var confirmModalBtn = '<button type="button" id="confirmButtonFinal" class="btn btn-primary" data-dismiss="modal">I Have My ID</button>';
 
     function openIDModal() {
-      createModal('idModal', 'Clinic Code', false,
+      createModal('idModal', 'Clinic Code', true,
         "Please write down or save for furture reference." + "<br>Clinic ID: <b>" + docRef.id+"</b>", false, confirmModalBtn); // create reset modal for future use
       // makes the modal open
       $('#idModal').modal({
-        keyboard: false
+        keyboard: false,
+        backdrop: 'static'
       });
       // resets the form
       document.getElementById('clinicForm').reset();
