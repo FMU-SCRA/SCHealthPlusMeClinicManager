@@ -31,6 +31,8 @@ function renderClinic(doc) {
 
   let li = document.createElement('li');
 
+  let clinicIDTitle = document.createElement('span');
+
   let clinicID = document.createElement('span');
 
   let clinicName = document.createElement('span');
@@ -74,6 +76,8 @@ function renderClinic(doc) {
   li.setAttribute('data-id', doc.id);
 
   button.setAttribute('class', "collapsible")
+
+  clinicIDTitle.textContent = "Clinic ID:";
 
   clinicID.textContent = doc.id;
 
@@ -127,6 +131,7 @@ function renderClinic(doc) {
   button.appendChild(city);
   button.appendChild(state);
   button.appendChild(zip);
+  content.appendChild(clinicIDTitle);
   content.appendChild(clinicID);
   content.appendChild(phoneTitle);
   content.appendChild(phone);

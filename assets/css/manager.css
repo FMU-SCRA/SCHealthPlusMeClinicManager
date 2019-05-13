@@ -25,15 +25,17 @@ h1{
 ul{
     list-style-type: none;
     padding: 0;
+
     /* display: inline-block; */
 }
+
 
 /*This is for the button values*/
 button span:nth-child(1){
     margin-top: 6px;
     color: white;
     margin-right: 15px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-weight: bold;
 }
 
@@ -68,12 +70,16 @@ button span:nth-child(5){
 
 /*This is for the content values*/
 
+/* .content {
+  padding-left: 38px;
+} */
+
 .content span:nth-child(1) {
     font-size: 12px;
     margin-top: 6px;
     color: white;
     margin-right: 3px;
-    margin-left: 38px;
+    font-weight: bold;
 }
 
 
@@ -83,7 +89,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(3) {
@@ -92,6 +97,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
+    font-weight: bold;
 }
 
 .content span:nth-child(4) {
@@ -100,7 +106,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(5) {
@@ -109,6 +114,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 2px;
+    font-weight: bold;
 }
 
 .content span:nth-child(6) {
@@ -117,7 +123,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(7) {
@@ -126,6 +131,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
+    font-weight: bold;
 }
 
 .content span:nth-child(8) {
@@ -134,7 +140,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(9) {
@@ -143,6 +148,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
+    font-weight: bold;
 }
 
 .content span:nth-child(10) {
@@ -151,7 +157,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(11) {
@@ -160,6 +165,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 2px;
+    font-weight: bold;
 }
 
 .content span:nth-child(12) {
@@ -168,7 +174,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 2px;
-    font-weight: bold;
 }
 
 .content span:nth-child(13) {
@@ -177,6 +182,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 2px;
+    font-weight: bold;
 }
 .content span:nth-child(14) {
     font-size: 12px;
@@ -184,6 +190,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 2px;
+
 }
 .content span:nth-child(15) {
     font-size: 12px;
@@ -265,7 +272,7 @@ button span:nth-child(5){
 
 .content {
   width: 100%;
-  /* padding: 0 18px; */
+  padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
