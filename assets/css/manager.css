@@ -74,6 +74,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 38px;
+    font-weight: bold;
 }
 
 
@@ -83,7 +84,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(3) {
@@ -92,6 +92,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
+    font-weight: bold;
 }
 
 .content span:nth-child(4) {
@@ -100,7 +101,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(5) {
@@ -109,6 +109,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 2px;
+    font-weight: bold;
 }
 
 .content span:nth-child(6) {
@@ -117,7 +118,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(7) {
@@ -126,6 +126,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
+    font-weight: bold;
 }
 
 .content span:nth-child(8) {
@@ -134,7 +135,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(9) {
@@ -143,6 +143,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
+    font-weight: bold;
 }
 
 .content span:nth-child(10) {
@@ -151,7 +152,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
 }
 
 .content span:nth-child(11) {
@@ -160,6 +160,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 2px;
+    font-weight: bold;
 }
 
 .content span:nth-child(12) {
@@ -168,7 +169,6 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 2px;
-    font-weight: bold;
 }
 
 .content span:nth-child(13) {
@@ -177,6 +177,7 @@ button span:nth-child(5){
     color: white;
     margin-right: 3px;
     margin-left: 2px;
+    font-weight: bold;
 }
 .content span:nth-child(14) {
     font-size: 12px;
