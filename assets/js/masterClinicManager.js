@@ -72,6 +72,8 @@ function renderClinic(doc) {
   let fluShotBool = document.createElement('span');
   let pneumoniaBool = document.createElement('span');
   let shinglesBool = document.createElement('span');
+  let tetanusBool = document.createElement('span');
+  let hepbBool = document.createElement('span');
 
   li.setAttribute('data-id', doc.id);
 
@@ -117,6 +119,8 @@ function renderClinic(doc) {
   fluShotBool.textContent = doc.data().serviceFlu;
   pneumoniaBool.textContent = doc.data().servicePneumonia;
   shinglesBool.textContent = doc.data().serviceShingles;
+  tetanusBool.textContent = doc.data().serviceTetanus;
+  hepbBool.textContent = doc.data().serviceHepB;
 
   // console.log("BP:"+ bloodPressureBool.textContent);
   // console.log("BS:"+ bloodSugarBool.textContent);
@@ -187,8 +191,19 @@ if (shinglesBool.textContent == "true") {
   // console.log("S:"+shinglesBool.textContent);
 }
 
+if (tetanusBool.textContent == "true") {
+  tetanusBool.textContent = "Tetanus";
+  content.appendChild(tetanusBool);
+   // console.log("S:"+shinglesBool.textContent);
+}
 
-  clinicListButtons.appendChild(button);
+if (hepbBool.textContent == "true") {
+  hepbBool.textContent = "Hepatitis B";
+  content.appendChild(hepbBool);
+  // console.log("S:"+shinglesBool.textContent);
+}
+
+clinicListButtons.appendChild(button);
 
   // clinicList.appendChild(li);
 

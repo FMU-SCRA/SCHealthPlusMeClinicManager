@@ -48,67 +48,77 @@ document.getElementById('clinicForm').addEventListener('submit', submitForm);
 
 // Submit form
 function submitForm(e) {
-  e.preventDefault();
-  var bloodPressureBool = false;
-  var bloodSugarBool = false;
-  var cholesterolBool = false;
-  var fluShotBool = false;
-  var pneumoniaBool = false;
-  var shinglesBool =  false;
+    e.preventDefault();
+    var bloodPressureBool = false;
+    var bloodSugarBool = false;
+    var cholesterolBool = false;
+    var fluShotBool = false;
+    var pneumoniaBool = false;
+    var shinglesBool = false;
+    var tetanusBool = false;
+    var hepbBool = false;
 
-  var clinicName = getInputVal('clinicName');
-  var address = getInputVal('address');
-  var city = getInputVal('city');
-  var state = getInputVal('state');
-  var phone = getInputVal('phone');
-  var zip = getInputVal('zip');
-  var hoursNormal = getInputVal('hoursNormal');
-  var hoursSat = getInputVal('hoursSat');
-  var hoursSun = getInputVal('hoursSun');
-  var website = getInputVal('url');
-  var latitude = getInputVal('lat');
-  var longitude = getInputVal('longitude');
-  var location = new firebase.firestore.GeoPoint(parseFloat(latitude), parseFloat(longitude));
+    var clinicName = getInputVal('clinicName');
+    var address = getInputVal('address');
+    var city = getInputVal('city');
+    var state = getInputVal('state');
+    var phone = getInputVal('phone');
+    var zip = getInputVal('zip');
+    var hoursNormal = getInputVal('hoursNormal');
+    var hoursSat = getInputVal('hoursSat');
+    var hoursSun = getInputVal('hoursSun');
+    var website = getInputVal('url');
+    var latitude = getInputVal('lat');
+    var longitude = getInputVal('longitude');
+    var location = new firebase.firestore.GeoPoint(parseFloat(latitude), parseFloat(longitude));
 
-  console.log(clinicName);
+    console.log(clinicName);
 
-  // below will be the services in message
-  var services = getInputVal('services');
-  // var resultPartOne = services.toUpperCase();
-  var resultPartTwo = services.toUpperCase();
+    // below will be the services in message
+    var services = getInputVal('services');
+    // var resultPartOne = services.toUpperCase();
+    var resultPartTwo = services.toUpperCase();
 
-  if(resultPartTwo.includes("ALL")) {
-    bloodPressureBool = true;
-    bloodSugarBool = true;
-    cholesterolBool = true;
-    shinglesBool = true;
-    pneumoniaBool = true;
-    fluShotBool = true;
-  }
+    if (resultPartTwo.includes("ALL")) {
+        bloodPressureBool = true;
+        bloodSugarBool = true;
+        cholesterolBool = true;
+        shinglesBool = true;
+        pneumoniaBool = true;
+        fluShotBool = true;
+        tetanusBool = true;
+        hepbBool = true;
+    }
 
-  if(resultPartTwo.includes("BLOOD PRESSURE")) {
-    bloodPressureBool = true;
-  }
+    if (resultPartTwo.includes("BLOOD PRESSURE")) {
+        bloodPressureBool = true;
+    }
 
-  if(resultPartTwo.includes("BP")) {
-    bloodPressureBool = true;
-  }
+    if (resultPartTwo.includes("BP")) {
+        bloodPressureBool = true;
+    }
 
-  if(resultPartTwo.includes("SUGAR")) {
-    bloodSugarBool = true;
-  }
-  if(resultPartTwo.includes("CHOLESTEROL")) {
-    cholesterolBool = true;
-  }
-  if(resultPartTwo.includes("FLU")) {
-    fluShotBool = true;
-  }
-  if(resultPartTwo.includes("PNEUMONIA")) {
-    pneumoniaBool = true;
-  }
-  if(resultPartTwo.includes("SHINGLES")) {
-    shinglesBool = true;
-}
+    if (resultPartTwo.includes("SUGAR")) {
+        bloodSugarBool = true;
+    }
+    if (resultPartTwo.includes("CHOLESTEROL")) {
+        cholesterolBool = true;
+    }
+    if (resultPartTwo.includes("FLU")) {
+        fluShotBool = true;
+    }
+    if (resultPartTwo.includes("PNEUMONIA")) {
+        pneumoniaBool = true;
+    }
+    if (resultPartTwo.includes("SHINGLES")) {
+        shinglesBool = true;
+    }
+    if (resultPartTwo.includes("TETANUS")) {
+        tetanusBool = true;
+    }
+    if (resultPartTwo.includes("HEP")){
+        hepbBool = true;
+    }
 
 db.collection("Locations").add({
   clinicName: clinicName,
@@ -127,7 +137,9 @@ db.collection("Locations").add({
   serviceCholesterol: cholesterolBool,
   serviceFlu: fluShotBool,
   servicePneumonia: pneumoniaBool,
-  serviceShingles: shinglesBool
+  serviceShingles: shinglesBool,
+  serviceTetanus: tetanusBool,
+  serviceHepB: hepbBool
 })
 .then(function(docRef) {
     console.log("Document written with ID: ", docRef.id);
